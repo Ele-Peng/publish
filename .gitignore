@@ -1,2 +1,4 @@
 server/node_modules/*
 publish-server/node_modules/*
+publish-tool/node_modules/*
+node_modules/*

@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/publish-server/routes/index.js"
+            "program": "${workspaceFolder}/publish-server-vanilla/index.js"
         }
     ]
 }

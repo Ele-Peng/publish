@@ -8,10 +8,10 @@ const postData = querystring.stringify({
 const options = {
     host: "localhost",
     port: 8081,
-    path: "/?filename=x.html",
+    path: "/?filename=z.html",
     method: "POST",
     headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/octet-stream",
         "Content-Length": Buffer.byteLength(postData)
     }
 };
