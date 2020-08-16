@@ -18,7 +18,6 @@ let packname = "./package"
         method: "POST",
         headers: {
             "Content-Type": "application/octet-stream",
-            "Content-Length": 0
         }
     };
 
