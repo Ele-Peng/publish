@@ -8,12 +8,11 @@ const postData = querystring.stringify({
 
 let filename = "./cat.jpg"
 fs.stat(filename, (error, stat) => {
-    console.log(stat);
-
+    
     const options = {
         host: "localhost",
         port: 8081,
-        path: "/?filename=cat.jpg",
+        path: "/?filename=" + filename,
         method: "POST",
         headers: {
             "Content-Type": "application/octet-stream",
@@ -37,7 +36,7 @@ fs.stat(filename, (error, stat) => {
         console.error(`problem with request: ${e.message}`);
     });
     
-    let readStream = fs.createReadStream("./cat.jpg");
+    let readStream = fs.createReadStream("./" + filename);
     readStream.pipe(req);
     readStream.on("end", () => {
         req.end();
